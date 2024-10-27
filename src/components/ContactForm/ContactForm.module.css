@@ -1,9 +1,12 @@
 .form {
   display: flex;
+
+  font-weight: 700;
   flex-direction: column;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 5px;
   width: 230px;
+  height: 300px;
   padding: 10px;
   margin-bottom: 30px;
 
@@ -17,12 +20,26 @@
   & button {
     width: 100px;
     margin: 0 auto;
+    border: none;
+    background-color: rgb(19, 18, 18);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+  }
+  & button:hover {
+    background-color: rgb(43, 42, 42);
   }
 }
 
 .field {
   width: 220px;
   height: 20px;
+  background-color: rgb(19, 18, 18);
+  color: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .ErrorMessage {
